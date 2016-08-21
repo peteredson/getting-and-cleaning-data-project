@@ -64,4 +64,4 @@ colnames(tidyframe)<-colnames(newDataFrame2)
 levels(tidyframe[,2])<-c('walk','upstairswalk','downstairswalk', 'sit','stand', 'lay')
 
 #Tidy Data Export
-write.table(tidyframe, "Tidy_Data.txt", sep = "")
+write.table(tidyframe, "Tidy_Data.txt", sep = "", row.names = FALSE)
